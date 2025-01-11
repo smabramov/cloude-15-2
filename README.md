@@ -71,7 +71,7 @@ yandex_storage_bucket.my_bucket: Creation complete after 2s [id=smabramov-2025-1
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
-![picture]()
+![picture](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/picture.png)
 
 2. Создать группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
 
@@ -293,7 +293,7 @@ yandex_compute_instance_group.ig-1: Creation complete after 5m29s [id=enp1hqcenn
 
 Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
 ```
-![vm]()
+![vm](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/vm.png)
 
  
 3. Подключить группу к сетевому балансировщику:
@@ -602,21 +602,21 @@ lb_ip_address = tolist([
 ])
 picture_key = "picture.jpg"
 ```
-![balancer]()
+![balancer](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/balancer.png)
 
-![index]()
+![index](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/index.png)
 
 Удаляю две вм и проверяю снова:
 
-![delete]()
+![delete](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/delete.png)
 
-![index]()
+![index](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/index.png)
 
 ВМ пресоздаются:
 
-![recreate]()
+![recreate](https://github.com/smabramov/cloude-15-2/blob/562334810ec2ca8c9188a0b9afe30937b6bcc5ba/png/recreate.png)
 
-Ссылка на манифесты - [ссылка]()
+Ссылка на манифесты - [ссылка](https://github.com/smabramov/cloude-15-2.git)
 
 4. (дополнительно)* Создать Application Load Balancer с использованием Instance group и проверкой состояния.
 
